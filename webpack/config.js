@@ -7,6 +7,7 @@ const pkg = require('../package.json');
 
 const loaders = require('./loaders');
 const plugins = require('./plugins');
+const preLoaders = require('./preLoaders');
 
 const DEBUG = process.env.NODE_ENV === 'development';
 const TEST = process.env.NODE_ENV === 'test';
@@ -43,6 +44,7 @@ const config = {
   },
   module: {
     loaders: loaders,
+    preLoaders: preLoaders,
   },
   postcss: [
     autoprefixer,

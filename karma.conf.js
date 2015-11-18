@@ -8,7 +8,7 @@ module.exports = function(config) {
     exclude: [],
     preprocessors: {
       'app/app.tests.js': ['webpack', 'sourcemap'],
-    ,}
+    },
     reporters: ['mocha'],
     port: 9876,
     colors: true,

@@ -17,8 +17,8 @@
     "lint": "eslint --ext .js --ext .jsx ./app && echo No linting errors.",
     "prebuild": "npm run clean",
     "prestart": "npm install",
-    "pretest": "npm install && npm run lint",
-    "pretest-travis": "npm install && npm run lint",
+    "pretest": "npm install",
+    "pretest-travis": "npm install",
     "start": "NODE_ENV=development node dev-server ./webpack/config",
     "test": "NODE_ENV=test karma start",
     "test-travis": "NODE_ENV=test karma start --single-run",
@@ -40,6 +40,8 @@
     "chai": "^3.0.0",
     "css-loader": "^0.15.2",
     "eslint": "~1.9.0",
+    "eslint-config-airbnb": "~1.0.0",
+    "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "~3.9.0",
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
@@ -72,8 +74,7 @@
     "style-loader": "^0.12.3",
     "template-html-loader": "0.0.3",
     "webpack": "^1.10.1",
-    "webpack-dev-server": "^1.10.1",
-    "eslint-config-airbnb": "~1.0.0"
+    "webpack-dev-server": "^1.10.1"
   },
   "engines": {
     "node": ">=0.12.0"

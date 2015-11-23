@@ -1,4 +1,3 @@
-import styles from './_Body.scss';
 import React from 'react';
 import Menu from '../Menu/Menu';
 
@@ -7,8 +6,8 @@ const { PropTypes } = React;
 export default class Body extends React.Component {
   render() {
     return (
-      <div className={styles.body}>
-        <h1 className={styles.header}>React Seed</h1>
+      <div className="body">
+        <h1 className="header">React Seed</h1>
         <p>This is an example seed app, powered by React, ES6 &amp; webpack.</p>
         <p>Here is some example data:</p>
         <Menu items={this.props.items} />

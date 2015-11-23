@@ -1,5 +1,3 @@
-import styles from './_App.scss';
-
 import React from 'react';
 import AppActions from '../../actions/AppActions';
 import ItemsStore from '../../stores/ItemsStore';
@@ -18,7 +16,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className={styles.app}>
+      <div className="app">
         <Body items={this.state.items} />
         <Footer />
       </div>
